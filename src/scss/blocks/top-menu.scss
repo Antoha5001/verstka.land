@@ -1,0 +1,28 @@
+.section-top__menu{
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li{
+      margin: 0 5px;
+
+      a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white-gray;
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid transparent;
+        transition-duration: 0.3s;
+        transition-property: color, border-bottom-color;
+
+        &:hover{
+          border-bottom-color: $orange;
+          color: $orange;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";window.addEventListener("DOMContentLoaded",function(){console.log("style")}),window.addEventListener("DOMContentLoaded",function(){console.log("other")}),console.log("myLongTitleNameFunction");
