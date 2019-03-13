@@ -126,7 +126,7 @@ function watch(){
     });
 
     // gulp.watch('./src/css/**/*.css', styles);
-    gulp.watch('./src/scss/**/*.scss',{usePolling: true}, sass);
+    gulp.watch(['./src/scss/*.scss','./src/scss/blocks/*.scss'],{usePolling: true}, sass);
     gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch('./src/img/**/*.{png,jpg,jpeg}', srcImg);
     gulp.watch('./src/img/**/*.{svg}', svg);

@@ -4,6 +4,7 @@
   background-size: cover;
   //height: 100vh;
   position: relative;
+  clip-path: polygon(0 80%, 0 0, 100% 0, 100% 80%, 50% 100%);
 
   &::after{
     content: "";
@@ -16,7 +17,9 @@
     display: block;
     z-index: 1;
   }
-
+  .section-wrap{
+    position: relative;
+  }
   .section-top__header{
     position: relative;
     z-index: 2;
@@ -27,5 +30,102 @@
     .section-top__menu{
       flex-basis: 62.5%;
     }
+  }
+  div.section-top__info{
+    position: relative;
+    z-index: 3;
+    padding: 190px 0 290px;
+    text-align: center;
+    h1{
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 1.2px;
+      color: $white-gray;
+      span{
+        font-size: 72px;
+        line-height: 1;
+        font-weight: 800;
+        display: block;
+        letter-spacing: 7.2px;
+        margin-top: 31px;
+      }
+    }
+  }
+  .section-top__paragraf{
+    font-size: 14px;
+    line-height: 24px;
+    color: $grey;
+    max-width: 630px;
+    margin: auto;
+  }
+
+  .section-top__buttons{
+    @include btn($red, true);
+  }
+}
+.divider{
+  @include devider();
+}
+.section-wrap__icons{
+  position: absolute;
+  //top: 0;
+  border: 5px solid rgba(255,255,255, 0.2);
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 30%);
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  a{
+    width: 74px;
+    height: 74px;
+    display: block;
+    background-color: $white-gray;
+  }
+  svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    height: 30px;
+    display: block;
+    fill: $red;
+  }
+}
+@media (max-width: 980px) {
+  .section-top{
+    div.section-top__info{
+      h1{
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 1.2px;
+        color: $white-gray;
+        span{
+          font-size: 54px;
+          line-height: 1;
+          font-weight: 800;
+          display: block;
+          letter-spacing: 7.2px;
+          margin-top: 31px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section-top{
+    .section-top__header{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .section-top__menu{
+        flex-basis: 100%;
+        margin: 20px auto;
+      }
+    }
+
+
   }
 }
