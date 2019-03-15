@@ -26,3 +26,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section-top__menu{
+    ul{
+
+      justify-content: center;
+      li{
+        margin: 5px;
+      }
+    }
+  }
+}
