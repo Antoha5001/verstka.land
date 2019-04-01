@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Antoha5001/gulp-2018.base#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "del": "^3.0.0",
+    "del": "^4.0.0",
     "gulp": "github:gulpjs/gulp",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cheerio": "^0.6.3",
@@ -28,10 +28,10 @@
     "gulp-plumber": "^1.2.1",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^2.1.0",
-    "gulp-uglify": "^3.0.1",
+    "gulp-uglify": "^3.0.2",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^7.0.0",
     "run-sequence": "^2.2.1"
